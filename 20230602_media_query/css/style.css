@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine;
+}
+
+/*태블릿*/
+@media screen and (max-width: 720px){
+    body{
+        background-color: aqua;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    /*주의 and와 괄호를 붙이면 안됨
+    괄호가 없다면 안됨
+    : 대신 =을 넣으면 안됨
+    : 의 양쪽을 띄어쓰면 이 아이는 됨*/
+    body{
+        background-color: rgb(177, 240, 240);
+    }
+}
