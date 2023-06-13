@@ -61,7 +61,7 @@
 
   .nav-list{
     display: flex;
-    columns-gap: 80px;
+    column-gap: 80px;
     font-weight: var(--font-extra-bold);
   }
 
