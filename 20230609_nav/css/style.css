@@ -35,6 +35,7 @@
 
   nav {
     height: 44px;
+    font-size: 30px;
   }
 
   .nav.container {
@@ -47,4 +48,60 @@
   .nav-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    /* padding-right: 16px;
+    padding-left: 16px;   한번에 쓰기*/
+    padding: 0 16px;
+  }
+
+  .nav.container a{
+    color: aliceblue;
+  }
+
+  .nav-list{
+    display: flex;
+    columns-gap: 80px;
+    font-weight: var(--font-extra-bold);
+  }
+
+  .nav.toggle {
+    font-size: var(--h2-font-size);   /*햄버거 사이즈 조금 크게 / 밑에는 안보이게*/
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: 540px) {
+    .nav-logo {
+      margin: 0 auto;
+    }
+
+    .nav-list{
+      position: absolute;
+      top: 44px;
+      right: 0;
+      left: 0;
+
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(239, 177, 28, 0.4);
+      backdrop-filter: blur();
+      height: 0;
+      overflow: hidden;   /*감춰라*/
+    }
+
+    .nav-item {
+      padding: 1em 0;
+      color: black; /*적용이 안됨*/
+      border-bottom: 2px solid #fff;
+    }
+
+    .nav-link {
+      display: blocks;
+    }
+
+    .nav.toggle{
+      visibility: visible;
+      position: absolute;
+      right: 16px;
+    }
   }
