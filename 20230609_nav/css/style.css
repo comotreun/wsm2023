@@ -42,7 +42,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0 16px;
   }
 
   .nav-list {
@@ -78,11 +78,12 @@
     .nav-list{
       position: absolute;
       top: 44px;
-      right: 0;
+      right: 0;/*양 옆 늘리기*/
       left: 0;
 
       flex-direction: column;
-      align-items: center;
+      text-align: center;
+      /* align-items: center; */
       background-color: rgb(239, 177, 28, 0.4);
       backdrop-filter: blur();
       height: 0;
@@ -96,7 +97,7 @@
     }
 
     .nav-link {
-      display: blocks;
+      display: block;
     }
 
     .nav.toggle{
@@ -104,4 +105,9 @@
       position: absolute;
       right: 16px;
     }
+
+    .show-menu{
+      height: 170px;
+    }
+
   }
