@@ -15,6 +15,7 @@
 
     /*font*/
     --body-font: 'Nanum Myeongjo', serif;
+    --body-color:orange;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -22,6 +23,8 @@
     --small-font-size: 0.8rem;
     --smaller-font-size: 0.6rem;
     --font-regular: 400;
+    --font-bold:700;
+    --font-extra-bold:800;
     
   }
 
@@ -39,14 +42,17 @@
   }
 
   .nav.container {
-    display: flex;
+    display: flex;  /*기본값 : 수평 정렬*/
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
+    color: #fff;
+    padding: 0 16px;  /*위아래 0, 왼오 16*/
   }
 
   .nav-list {
     display: flex;
+    column-gap: 80px;
+    font-weight: var(--font-extra-bold);
     justify-content: space-between;
     align-items: center;
     color: aliceblue;
@@ -59,22 +65,20 @@
     color: aliceblue;
   }
 
-  .nav-list{
-    display: flex;
-    column-gap: 80px;
-    font-weight: var(--font-extra-bold);
-  }
-
   .nav.toggle {
     font-size: var(--h2-font-size);   /*햄버거 사이즈 조금 크게 / 밑에는 안보이게*/
-    visibility: hidden;
+    visibility: hidden; /*감춰*/
   }
 
-  @media screen and (max-width: 540px) {
+/* table */
+@media screen and (max-width: 540px){
+  /* nav-logo 가운데 */
     .nav-logo {
       margin: 0 auto;
     }
 
+    /* .nav-toggle 보이게 */
+    /* .nav-list navbar 아래로 */
     .nav-list{
       position: absolute;
       top: 44px;
@@ -105,6 +109,9 @@
       position: absolute;
       right: 16px;
     }
+    /* show-nenu하면, .nav-list 보이게 */
+    /* show-menu하면, .nav-toggle 버튼 x로  */
+
 
     .show-menu{
       height: 170px;
