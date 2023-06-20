@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>결과 페이지</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>결과 페이지</h1>
+    </header>
+
+    <img src="images/실패.jpg">
+
+    <div class="result-content">
+        <h2>분석 결과</h2>
+        <p>당신이 고른 이미지는 맞지 않은 음식이었습니다!</p>
+        <div id="result-container">
+            <h3>정답은 소바빵이었습니다</h3>
+            <p>이미지에 대한 소바빵의 퍼센트 : <span id="probability"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // URL에서 매개변수 가져오기
+        const urlParams = new URLSearchParams(window.location.search);
+        const probability = urlParams.get('probability');
+
+        // 화면에 퍼센트 값을 표시
+        document.getElementById('probability').textContent = probability;
+    </script>
+</body>
+</html>
