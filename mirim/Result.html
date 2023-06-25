@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>홈페이지</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="ham">
+    </div>
+    <img src="img/logo.png" alt="logo" href="index.html" id="logo">
+    <h1>미림 서폿</h1>
+    <nav>
+        <div id="dvMenu">
+            <ul>
+                <li><a href="Service.html">서비스</a></li>
+                <li><a href="page1.html">검사</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+  <div class="container">
+    <img src="img/결과.png" alt="학과 이미지" id="image">
+    <div id="result">
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedValue1 = urlParams.get('value1');
+        const selectedValue2 = urlParams.get('value2');
+    
+        const resultDiv = document.createElement('div');
+        resultDiv.innerHTML = "당신의 진단 결과는<br><span style='font-weight: bold; font-size: 50px;'>" + selectedValue1 + 
+                             "</span>의 <span style='font-weight: bold; font-size: 50px;'>" + selectedValue2 + "</span><br>입니다.";
+        document.getElementById('result').appendChild(resultDiv);
+      </script>
+    </div>
+    <div class="button_result">
+      <button onclick="window.location.href='Service.html'">관련 서비스</button>
+    </div>
+  </div>
+</body>
+</html>

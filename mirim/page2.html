@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>홈페이지</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header>
+    <div class="ham">
+    </div>
+    <img src="img/logo.png" alt="logo" href="index.html" id="logo">
+    <h1>미림 서폿</h1>
+    <nav>
+        <div id="dvMenu">
+            <ul>
+                <li><a href="Service.html">서비스</a></li>
+                <li><a href="page1.html">검사</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <br><br>
+        <img src="img/pngegg.png">
+        <br><br>
+        <h2>Q. 어떤 서비스를 찾고 싶으신가요?</h2><br><br>
+        <div class="button-container">
+            <button value="학과" onclick="selectButton(this); nextPage()">학과</button>
+            <button value="병원" onclick="selectButton(this); nextPage()">병원</button>
+            <button value="보험" onclick="selectButton(this); nextPage()">보험</button>
+            <button value="법률" onclick="selectButton(this); nextPage()">법률</button>
+          </div>
+      </div>
+
+  <script>
+    let selectedValue2 = '';
+
+    function selectButton(button) {
+      selectedValue2 = button.value;
+    }
+
+    function nextPage() {
+      window.location.href = "Result.html?value1=" + encodeURIComponent(getSelectedValue1()) + "&value2=" + selectedValue2;
+    }
+
+    function getSelectedValue1() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('value1');
+    }
+  </script>
+</body>
+</html>

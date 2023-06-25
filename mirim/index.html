@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirim Support</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <script>
+        var currentIndex = 0;
+
+        setInterval(function () {
+            if (currentIndex < 2) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+
+            $(".slideImg").eq(currentIndex).siblings().fadeOut();
+            $(".slideImg").eq(currentIndex).fadeIn();
+
+        }, 3000);
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="ham">
+        </div>
+        <img src="img/logo.png" alt="logo" href="index.html" id="logo">
+        <h1>미림 서폿</h1>
+        <nav>
+            <div id="dvMenu">
+                <ul>
+                    <li><a href="Service.html">서비스</a></li>
+                    <li><a href="page1.html">검사</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide">
+        <div class="slideList">
+            <div class="slideImg"><img src="img/slider_001.jpg" alt="슬라이드1"></div>
+            <div class="slideImg"><img src="img/slider_002.jpg" alt="슬라이드2"></div>
+        </div>
+
+    <div id="day">
+        <h4>오늘의 TMI</h4>
+        <p>
+            대전 중구<br>
+            어르신 외출 동반자 '보행보조기' 전달
+        </p>
+    </div>
+</body>
+
+</html>

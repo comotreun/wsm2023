@@ -1,0 +1,32 @@
+@media screen and (min-width: 1024px) {
+    #index_01{
+        width: 1400px;
+        height: 580x;
+        border: 1px solid dimgrey;
+        margin: 75px auto;
+    }
+
+    #slide1{
+        height: 300px;
+        overflow: hidden;
+        border-bottom: 1px solid dimgrey;
+    }
+    #slide1>ul{
+        width: 3600px;
+        font-size: 0;
+    }
+    #slide1>ul>li{
+        display: inline-block;
+        font-size: 0;
+    }
+    
+}
+
+@media screen and (min-width:768px)and(max-width: 1024px){
+    
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    /* 모바일 장치에 대한 스타일 지정 */
+
+}
