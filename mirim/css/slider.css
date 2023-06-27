@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1024px) {
     .swiper {
-        width: 1200px;
+        max-width: 1200px;
     }
 
     .swiper-slide {
@@ -30,7 +30,7 @@
 
 @media screen and (min-width:768px)and(max-width: 1023px) {
     .swiper {
-        width: 1200px;
+        max-width: 1023px;
     }
 
     .swiper-slide {
@@ -55,7 +55,7 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
     /* 모바일 장치에 대한 스타일 지정 */
     .swiper {
-        width: 1200px;
+        max-width: 767px;
     }
 
     .swiper-slide {
