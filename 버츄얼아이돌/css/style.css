@@ -1,0 +1,173 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+body {
+  font-family: var(--body-font);
+  color: var(--body-color);
+}
+
+/*Variables css*/
+:root {
+  /*color*/
+  --first-color: #008156;
+  --second-color: #efb11c;
+
+  /*font*/
+  --body-font: 'Nanum Myeongjo', serif;
+  --body-color:orange;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.8rem;
+  --smaller-font-size: 0.6rem;
+  --font-regular: 400;
+  --font-bold:700;
+  --font-extra-bold:800;
+  
+}
+
+header {
+  background-color: var(--first-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+nav {
+  height: 44px;
+  font-size: 30px;
+}
+
+.nav.container {
+  display: flex;  /*기본값 : 수평 정렬*/
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0 16px;  /*위아래 0, 왼오 16*/
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 80px;
+  font-weight: var(--font-extra-bold);
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  /* padding-right: 16px;
+  padding-left: 16px;   한번에 쓰기*/
+  padding: 0 16px;
+}
+
+.nav.container a{
+  color: aliceblue;
+}
+
+.nav.toggle {
+  font-size: var(--h2-font-size);   /*햄버거 사이즈 조금 크게 / 밑에는 안보이게*/
+  visibility: hidden; /*감춰*/
+}
+
+/* table */
+@media screen and (max-width: 540px){
+/* nav-logo 가운데 */
+  .nav-logo {
+    margin: 0 auto;
+  }
+
+  /* .nav-toggle 보이게 */
+  /* .nav-list navbar 아래로 */
+  .nav-list{
+    position: absolute;
+    top: 44px;
+    right: 0;/*양 옆 늘리기*/
+    left: 0;
+
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    background-color: rgb(239, 177, 28, 0.4);
+    backdrop-filter: blur();
+    height: 0;
+    overflow: hidden;   /*감춰라*/
+  }
+
+  .nav-item {
+    padding: 1em 0;
+    color: black; /*적용이 안됨*/
+    border-bottom: 2px solid #fff;
+  }
+
+  .nav-link {
+    display: block;
+  }
+
+  .nav.toggle{
+    visibility: visible;
+    position: absolute;
+    right: 16px;
+  }
+  /* show-nenu하면, .nav-list 보이게 */
+  /* show-menu하면, .nav-toggle 버튼 x로  */
+
+
+  .show-menu{
+    height: 170px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  [name="slide"] {
+    display: none;
+  }
+
+  .slidebox {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .slidebox img {
+    max-width: 1000px;
+  }
+
+  .slidebox .slidelist{
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+  }
+
+  .slidebox .slieditem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .35s;
+  }
+
+  .slidebox .slieditem label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transition: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  label.left {
+    left: 20px;
+    background-color: aliceblue;
+    background-image: url();
+  }
+}
