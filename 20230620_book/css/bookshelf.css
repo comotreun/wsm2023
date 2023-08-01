@@ -14,8 +14,16 @@
 
 .book-item {
     box-shadow: 0 16px 32px #ddd;
+    transition: all 0.3s;   /*hover일 때만이 아니라 마우스를 벗어나는 경우도 자연스럽게*/
+}
+
+.book-item:hover {
+    box-shadow: 0 32px 64px #e0e0e0;
+    transform: translateY(-8px);       /*위로 8px 올리기*/
+    /*transition: all 0.5s;   hover일 때만 자연스럽게*/
 }
 
 .book-item > img {
     width: 150px;
+    display: block; /*이미지 밑에 자동생성된 여백 제거*/
 }
