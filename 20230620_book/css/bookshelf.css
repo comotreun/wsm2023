@@ -23,7 +23,7 @@
     /*transition: all 0.5s;   hover일 때만 자연스럽게*/
 }
 
-.book-item > img {
+.book-item img {
     width: 150px;
     display: block; /*이미지 밑에 자동생성된 여백 제거*/
 }
