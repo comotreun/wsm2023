@@ -1,26 +1,62 @@
+main {
+    margin-top: calc(44px + 100px);
+    /* 모든 연산자는 calc에 쓰이는 순간 띄어쓰기가 있어야 적용이 된다. */
+}
+
+.container{
+    display: flex;  
+}
+
+.image-info-groups{
+    /* flex-wrap: wrap; 태블릿 너비c일때 info-groups 전체가 먼저 wrap이 돼버려서 주석 처리함*/
+}
+
+@media screen and (max-width: 540px) {
+    .image-info-groups {
+        flex-direction: column;
+    }
+    .info-groups{
+        flex-direction: column;
+    }
+}
+
+.info-groups {
+    flex-wrap: wrap;
+}
+
+.info-group{
+    flex-direction: column;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.reviews {
+    flex-direction: column;
+}
+
+.review {
+    flex-direction: column;
+}
+
 main div{
-    margin-top: 40px;
     border: 2px solid black;
 }
 
-.review{
-    display: flex;
-    flex-direction: column;
-}
-
-.row-container {
-    display: flex;
-}
-
-.row-container:nth-child(2){
-    flex-direction: column;
-}
-
-.book{
+.book-image{
+    background-color: bisque;
     width: 200px;
     height: 400px;
 }
 
-.explain{
-    display: flex;
+.info {
+    background-color: teal;
+    width: 200px;
+    height: 100px;
+}
+
+.review {
+    background-color: tan;
+    height: 100px;
 }
