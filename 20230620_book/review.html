@@ -20,7 +20,7 @@
             </a>
 
             <ul class="nav-list">
-                <li class="nav-item"><a href="" class="nav-link">책장</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">책장</a></li>
                 <li class="nav-item"><a href="" class="nav-link">리뷰</a></li>
                 <li class="nav-item"><a href="" class="nav-link">캘린더</a></li>
             </ul>
@@ -32,17 +32,15 @@
     </header>
 
     <main id="review">
-
         <div class="image-info-groups container">
             <div class="book-image">
                 .book-image
-                <!--div 와 span의 차이 span은 줄 바꿈이 안되고, div는 줄바꿈이 된다.-->
             </div>
             <div class="info-groups container">
-                <div class="info-group container"><!--.info.container*2 = > info가 두개 생성됨-->
+                <div class="info-group container">
                     <div class="info container">
                         <div class="title label">
-                            .title label
+                            제목
                         </div>
                         <div class="title">
                             .title
@@ -50,18 +48,17 @@
                     </div>
                     <div class="info container">
                         <div class="author label">
-                            .author label
+                            저자
                         </div>
                         <div class="author">
                             .author
                         </div>
                     </div>
                 </div>
-
                 <div class="info-group container">
                     <div class="info container">
                         <div class="publisher label">
-                            .publisher lable
+                            출판사
                         </div>
                         <div class="publisher">
                             .publisher
@@ -69,7 +66,7 @@
                     </div>
                     <div class="info container">
                         <div class="read-date label">
-                            .read-date.label
+                            읽은 날짜
                         </div>
                         <div class="read-date">
                             .read-date
@@ -77,29 +74,28 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="reviews container">
             <div class="review container">
-                <div class="synopsis lable">
-                    .synopsis lable
+                <div class="synopsis label">
+                    줄거리
                 </div>
                 <div class="synopsis">
-                    .synopsis
+                    <input type="text" placeholder="줄거리를 쓰세요.">
                 </div>
             </div>
             <div class="review container">
-                <div class="phrase lable">
-                    .phrase lable
+                <div class="phrase label">
+                    마음에 드는 구절
                 </div>
                 <div class="phrase">
-                    .phrase
+                    <input type="text" placeholder="마음에 드는 구절을 쓰에요.">
                 </div>
             </div>
         </div>
-
     </main>
+
 
     <script src="js/data.js"></script>
     <script src="js/nav.js"></script>
