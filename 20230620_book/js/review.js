@@ -40,6 +40,9 @@ const titleDiv = document.getElementsByClassName("title")[1];
 // const titleDiv = document.querySelectorAll(".title");
 //js 변수.innerHTML
 titleDiv.innerHTML = title;
+//titleDiv에 title 속성 값에 title을 넣자
+titleDiv.setAttribute('title', title); // list라는 클래스를 추가
+//titleDiv.title = title;   이것도 됨
 
 const authorDiv = document.getElementsByClassName("author")[1];
 authorDiv.innerHTML = author;

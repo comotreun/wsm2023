@@ -16,11 +16,13 @@ main {
     flex-wrap: wrap;
     margin: 0 40px;
     gap: 40px;
+    min-width: 200px;/*... 빌드*/
 }
 
 .info-group{
     flex-direction: column;
     gap: 40px;
+    overflow: hidden;/*... 빌드*/
 }
 
 .info {
@@ -44,6 +46,9 @@ main {
 .synopsis,
 .phrase {
     font-size: 1.25rem;
+    white-space: nowrap;    /*...만들기 위한 빌드*/
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .label {
