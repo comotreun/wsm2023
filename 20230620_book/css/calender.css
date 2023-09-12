@@ -22,6 +22,11 @@ main {
     padding: 10px;
 }
 
+.date.item:nth-child(1){
+    background-color:aquamarine;
+    grid-column-start: 6;
+}
+
 .review.flex-container {
     display: flex;
     flex-direction: column;
