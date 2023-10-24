@@ -13,6 +13,13 @@ main {
     margin-bottom: 50px;    /*title 과 weekday의 간격 벌림*/
 }
 
+.left,
+.right {
+    cursor: pointer;
+}
+
+
+
 .weekday.container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -22,7 +29,7 @@ main {
     padding: 10px;
 }
 
-.date.item:nth-child(1){
+/* .date.item:nth-child(1){
     background-color:aquamarine;
     grid-column-start: 6;
 }
@@ -33,7 +40,7 @@ main {
 
 .date.item:nth-child(7n+3) {
     color:crimson;
-}
+} */
 
 .review.flex-container {
     display: flex;

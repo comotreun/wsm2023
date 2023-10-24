@@ -23,10 +23,10 @@ const setCalendar = (year, month) => {
 
     //원래 있던 달력의 자식들 버리기
     datesContainerDiv.replaceChildren();
-    while (datesContainerDiv.firstChild !== undefined) {
-        datesContainerDiv.removeChild(datesContainerDiv.firstChild);
-    }
-    datesContainerDiv.innerHTML="";
+    // while (datesContainerDiv.firstChild !== undefined) {
+    //     datesContainerDiv.removeChild(datesContainerDiv.firstChild);
+    // }
+    // datesContainerDiv.innerHTML="";
 
     //for 1~lastDate
     for (let date = 1; date <= lastDate; date++) {
